@@ -10,7 +10,54 @@
 </head>
 
 <body>
-  <h1>Мой первый урок по тегам</h1>
+  <div class="wrapper"><!-- Обертка всего сайта, всей страницы: -->
+    <header class="header"><!-- Шапка сайта: -->
+      <div class="header__container">
+        <div class="logo">Logo</div>
+        <nav>
+          <ul style="display: flex">
+            <li>Главная</li>
+            <li>О нас</li>
+            <li>Контакты</li>
+          </ul>
+        </nav>
+        <a href="tel:+375255228110">+375255228110</a>
+      </div>
+    </header><!-- Шапка сайта -->
+
+    <main class="main"><!-- Основной контент: -->
+      <div class="main__container">
+        <div>Hello World!</div>
+
+        <article>
+          <h3>Товар 1</h3>
+          <span>Цена: 3000грн.</span>
+        </article>
+
+        <article>
+          <h3>Товар 2</h3>
+          <span>Цена: 4000грн.</span>
+        </article>
+
+        <article>
+          <h3>Товар 3</h3>
+          <span>Цена: 2000грн.</span>
+        </article>
+
+        <article>
+          <h3>Товар 4</h3>
+          <span>Цена: 1000грн.</span>
+        </article>
+        
+      </div>
+    </main><!-- Основной контент: -->
+
+    <footer class="footer"><!-- Подвал: -->
+      <div class="footer__container">
+        Ivan 2022 Все права защищены
+      </div>
+    </footer><!-- Подвал -->
+  </div><!-- Обертка всего сайта, всей страницы: -->
 
   <!-- Подключаем файл index.js -->
   <script src="./js/index.js"></script>

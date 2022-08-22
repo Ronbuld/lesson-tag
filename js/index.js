@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+/* 
+header - 
+main -
+footer -
+article -
+aside - сайдбар
+div -
+*/
