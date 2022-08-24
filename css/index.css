@@ -3,58 +3,75 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
-div {
-  background: red;
-}
-
 html,body {
   height: 100%;
 	width: 100%;
 	line-height: 1;
-	font-size: 14px;
-  font-weight: 400;
-}
-#Ваня {
-
-}
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+	font-size: 14px; /* размер текста*/
+  font-weight: 400;/* толщина текста*/
+  font-family: 'Roboto', sans-serif;
 }
 [class*="__container"] {
-  max-width:900px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header {
-  background: rgb(236, 195, 195);
-  padding: 20px 0;
-}
-
-.header__container {
   display: flex;
+  max-width:100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/* ======================================= */
+.discord {
+  height: 100%;
+  width: 100%;
+  background: #292B2F;
+  overflow: hidden;
+}
+.header {
+  background: #373737;
+  padding: 5px 0;
+}
+.header__container {
   justify-content: space-between;
   align-items: center;
 }
-
-.main {
-  flex: 1 1 auto;
-  padding-top: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background: rgb(46, 69, 170);
+.header__logo {
+  color: #fff; /* отвечает за цвет текста */
+  font-size: 12px; /* определяет размер шрифта */
 }
-.main__container {
-  background: rgb(118, 216, 118);
+.header__btn-group {
+  display: flex;
+  align-items: center;
 }
-
-.footer {
-  background: green;
-  padding: 40px 0;
-  color: #fff;
+.btn-header {
+  display: flex;/* отвечает за размещение иконок по центру кнопки*/
+  align-items: center;/* тоже самое, что и дисплей*/
+  justify-content: center;
+  padding: 4px;
+  width: 14px; /* отвечает за ширину */
+  height: 14px; /* отвечает за высоту*/
+  border: 0; /* отвечает за толщину края иконки*/
+  border-radius: 50%; /* отвечает за округость иконок*/
+  cursor: pointer;
+  background: #5D5D5D; /* делает цвет подложки -- цвет фона */
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+.btn-header svg {
+  width: 10px; /* отвечает за ширину */
+  height: 10px;/* отвечает за высоту*/
+  opacity: 0;
+  transition: all 200ms ease-in-out; /* отвечает за скорость анимации */
+}
+.btn-header:hover.btn-header svg {
+  opacity: 1;
+}
+.btn-header--turn:hover {
+  background: #FFB32D; /* заливка кнопки в желтый цвет*/
+}
+.btn-header--full:hover {
+  background: #19ca5d; /* заливка кнопки в зеленый цвет*/
+}
+.btn-header--close:hover {
+  background: #e7154a; /* заливка кнопки в красный цвет*/
+}
+.btn-header:not(:last-child) {
+  margin-right: 5px; /* отвечает за отступ вправо, всех кнопок, кроме последней*/
 }
