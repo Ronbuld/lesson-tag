@@ -1,66 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Урок по тегам</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <title>Document</title>
 </head>
-
 <body>
-  <div class="wrapper"><!-- Обертка всего сайта, всей страницы: -->
-    <header class="header"><!-- Шапка сайта: -->
-      <div class="header__container">
-        <div class="logo">Logo</div>
-        <nav>
-          <ul style="display: flex">
-            <li>Главная</li>
-            <li>О нас</li>
-            <li>Контакты</li>
-          </ul>
-        </nav>
-        <a href="tel:+375255228110">+375255228110</a>
-      </div>
-    </header><!-- Шапка сайта -->
-
-    <main class="main"><!-- Основной контент: -->
-      <div class="main__container">
-        <div>Hello World!</div>
-
-        <article>
-          <h3>Товар 1</h3>
-          <span>Цена: 3000грн.</span>
-        </article>
-
-        <article>
-          <h3>Товар 2</h3>
-          <span>Цена: 4000грн.</span>
-        </article>
-
-        <article>
-          <h3>Товар 3</h3>
-          <span>Цена: 2000грн.</span>
-        </article>
-
-        <article>
-          <h3>Товар 4</h3>
-          <span>Цена: 1000грн.</span>
-        </article>
-        
-      </div>
-    </main><!-- Основной контент: -->
-
-    <footer class="footer"><!-- Подвал: -->
-      <div class="footer__container">
-        Ivan 2022 Все права защищены
-      </div>
-    </footer><!-- Подвал -->
-  </div><!-- Обертка всего сайта, всей страницы: -->
-
-  <!-- Подключаем файл index.js -->
-  <script src="./js/index.js"></script>
+  <!--
+    БЭМ - Блок - Элемент - Модификатор
+  -->
+  <div class="discord">
+    <header class="discord__header header"></header>
+    <div class="discord__wrapper wrapper">
+      <aside class="group-messages"></aside>
+      <aside class="private-messages">
+        <div class="private-messages__header"></div>
+        <div class="private-messages__body"></div>
+        <div class="private-messages__footer"></div>
+      </aside>
+      <main class="private-content">
+        <div class="private-content__top-screen"></div>
+        <div class="private-content__messages"></div>
+        <div class="private-content__bottom"></div>
+      </main>
+    </div>
+  </div>
 </body>
-
 </html>
